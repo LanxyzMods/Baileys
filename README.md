@@ -1,4 +1,4 @@
-# WhatsApp Baileys ZyrennOfficial
+# WhatsApp Baileys Erlan
 
 <p align="center">
   <img src="https://files.catbox.moe/y7yeip.jpg" alt="Thumbnail" />
@@ -57,7 +57,7 @@ Send group status with version 2
 ```javascript
 await sock.sendMessage(target, {
      groupStatusMessage: {
-          text: "ZYRENN OFFICIAL"
+          text: "ErlanMods"
      }
 });
 ```
@@ -68,8 +68,8 @@ Send multiple images in a single album message:
 ```javascript
 await sock.sendMessage(target, { 
     albumMessage: [
-        { image: cihuy, caption: "ZYRENN OFFICIAL" },
-        { image: { url: "URL IMAGE" }, caption: "ZYRENN OFFICIAL" }
+        { image: cihuy, caption: "ErlanMods" },
+        { image: { url: "URL IMAGE" }, caption: "ErlanMods" }
     ] 
 }, { quoted: m });
 ```
@@ -81,12 +81,12 @@ Create and send WhatsApp event invitations:
 await sock.sendMessage(target, { 
     eventMessage: { 
         isCanceled: false, 
-        name: "ZYRENN OFFICIAL", 
-        description: "ZYRENN OFFICIAL", 
+        name: "ErlanMods", 
+        description: "ErlanMods", 
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
-            name: "ZYRENN OFFICIAL" 
+            name: "ErlanMods" 
         }, 
         joinLink: "https://call.whatsapp.com/video/obito2", 
         startTime: "1763019000", 
@@ -102,14 +102,14 @@ Display poll results with vote counts:
 ```javascript
 await sock.sendMessage(target, { 
     pollResultMessage: { 
-        name: "ZYRENN OFFICIAL", 
+        name: "ErlanMods", 
         pollVotes: [
             {
-                optionName: "ZYRENN OFFICIAL",
+                optionName: "ErlanMods",
                 optionVoteCount: "112233"
             },
             {
-                optionName: "ZYRENN OFFICIAL",
+                optionName: "ErlanMods",
                 optionVoteCount: "1"
             }
         ] 
@@ -123,14 +123,14 @@ Send basic interactive messages with copy button functionality:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "ZYRENN OFFICIAL",
-        title: "ZYRENN OFFICIAL",
+        header: "ErlanMods",
+        title: "ErlanMods",
         footer: "telegram: @topsdominic ",
         buttons: [
             {
                 name: "cta_copy",
                 buttonParamsJson: JSON.stringify({
-                    display_text: "ZYRENN OFFICIAL",
+                    display_text: "ErlanMods",
                     id: "123456789",              
                     copy_code: "ABC123XYZ"
                 })
@@ -146,8 +146,8 @@ Send interactive messages with buttons, copy actions, and native flow features:
 ```javascript
 await sock.sendMessage(target, {    
     interactiveMessage: {      
-        header: "ZYRENN OFFICIAL",
-        title: "ZYRENN OFFICIAL",      
+        header: "ErlanMods",
+        title: "ErlanMods",      
         footer: "telegram: @topsdominic",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
@@ -155,14 +155,14 @@ await sock.sendMessage(target, {
                 limited_time_offer: {            
                     text: "idk hummmm?",            
                     url: "https://t.me/topsdominic",            
-                    copy_code: "ZYRENN OFFICIAL",            
+                    copy_code: "ErlanMods",            
                     expiration_time: Date.now() * 999          
                 },          
                 bottom_sheet: {            
                     in_thread_buttons_limit: 2,            
                     divider_indices: [1, 2, 3, 4, 5, 999],            
-                    list_title: "ZYRENN OFFICIAL",            
-                    button_title: "ZYRENN OFFICIAL"          
+                    list_title: "ErlanMods",            
+                    button_title: "ErlanMods"          
                 },          
                 tap_target_configuration: {            
                     title: " X ",            
@@ -188,7 +188,7 @@ await sock.sendMessage(target, {
                 {            
                     name: "single_select",            
                     buttonParamsJson: JSON.stringify({              
-                        title: "ZYRENN OFFICIAL",              
+                        title: "ErlanMods",              
                         sections: [                
                             {                  
                                 title: "title",                  
@@ -225,8 +225,8 @@ Send interactive messages with thumbnail image and copy button:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "ZYRENN OFFICIAL",
-        title: "ZYRENN OFFICIAL",
+        header: "ErlanMods",
+        title: "ErlanMods",
         footer: "telegram: @topsdominic",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
@@ -278,8 +278,8 @@ Send interactive messages with document from buffer (file system) - **Note: Docu
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "ZYRENN OFFICIAL",
-        title: "ZYRENN OFFICIAL",
+        header: "ErlanMods",
+        title: "ErlanMods",
         footer: "telegram: @topsdominic",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
@@ -291,8 +291,8 @@ await sock.sendMessage(target, {
             isForwarded: false
         },
         externalAdReply: {
-            title: "ZYRENN OFFICIAL",
-            body: "ZYRENN OFFICIAL",
+            title: "ErlanMods",
+            body: "ErlanMods",
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
@@ -320,8 +320,8 @@ Send interactive messages with document from buffer (file system) without contex
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "ZYRENN OFFICIAL",
-        title: "ZYRENN OFFICIAL",
+        header: "ErlanMods",
+        title: "Erlan",
         footer: "telegram: @topsdominic",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
